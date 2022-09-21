@@ -68,7 +68,7 @@ h2:hover {
 }
 
 p:hover {
- border: 3px dotted white;
+ border: 3px double white;
 }
 
 @keyframes animate {
