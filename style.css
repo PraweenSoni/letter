@@ -23,6 +23,7 @@
  ul {
   padding: 5px 10px;
   margin: 10px;
+  user-select: none;
  }
 
  h1,
@@ -103,7 +104,6 @@
   color: #484848;
   animation: glow 2s linear infinite;
   cursor: pointer;
-  user-select: none;
  }
 
  @keyframes glow {
