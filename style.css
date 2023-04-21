@@ -25,6 +25,68 @@
   margin: 10px;
  }
 
+ h1,
+ h2,
+ p {
+  font-weight: 700;
+  color: #484848;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  cursor: pointer;
+ }
+
+ /* Animation 1 */
+ h1:hover {
+  color: #fff;
+  border: 3px solid #03e9f4;
+  text-shadow: 0 0 5px #03e9f4,
+   0 0 25px #03e9f4,
+   0 0 50px #03e9f4,
+   0 0 100px #03e9f4;
+ }
+
+ /* Animation 2 */
+ h2:hover {
+  text-shadow: red -2px 0,
+   cyan 2px 0;
+  background-color: white;
+ }
+
+ /* Animation 3 */
+ p {
+  font-size: 35px;
+  font-weight: 700;
+  color: #000;
+  background: linear-gradient(to right, orange 20%, white 40%, green 60%, #fff 80%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 2s linear infinite;
+ }
+
+ p:hover {
+  border: 3px dotted white;
+ }
+
+ /* Animation 4 */
+ b {
+  font-size: 35px;
+  font-weight: 700;
+  color: deepskyblue;
+  background: linear-gradient(to right, orange 20%, white 40%, green 60%, #fff 80%);
+  background-size: 200% auto;
+  background-clip: text;
+  animation: animate 2s linear infinite;
+ }
+
+ @keyframes animate {
+  to {
+   background-position: 200% center;
+  }
+ }
+
+ /* Animation 5 */
  ul {
   height: 100%;
   list-style: none;
@@ -111,68 +173,4 @@
 
  ul li:nth-child(13) {
   animation-delay: 1.2s;
- }
-
-
- h1,
- h2,
- p{
-  font-weight: 700;
-  color: #484848;
-  letter-spacing: 2px;
-  transition: 0.5s;
-  cursor: pointer;
- }
-
-
- p {
-  font-size: 35px;
-  font-weight: 700;
-  color: #000;
-  background: linear-gradient(to right, orange 20%, white 40%, green 60%, #fff 80%);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 2s linear infinite;
- }
-
- b {
-  font-size: 35px;
-  font-weight: 700;
-  color: deepskyblue;
-  background: linear-gradient(to right, orange 20%, white 40%, green 60%, #fff 80%);
-  background-size: 200% auto;
-  background-clip: text;
-  animation: animate 2s linear infinite;
- }
-
- h3 {
-  color: #fff;
-  animation: bg 2s linear infinite;
- }
-
- h1:hover {
-  color: #fff;
-  border: 3px solid #03e9f4;
-  text-shadow: 0 0 5px #03e9f4,
-   0 0 25px #03e9f4,
-   0 0 50px #03e9f4,
-   0 0 100px #03e9f4;
- }
-
- h2:hover {
-  text-shadow: red -2px 0,
-   cyan 2px 0;
-  background-color: white;
- }
-
- p:hover {
-  border: 3px dotted white;
- }
-
- @keyframes animate {
-  to {
-   background-position: 200% center;
-  }
  }
